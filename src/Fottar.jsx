@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Fotar = () => {
+const Fottar = () => {
     return (
-        <footer className=" bg-black">
-            <div className="max-w-[1250px] mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className='bg-black'>
+        <div className="max-w-[1250px] mx-auto border-b-1 border-gray-800 bg-black">
+            <div className="max-w-[1250px] mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
 
-                <div className="p-4">
+                <div className="p-2">
                     <h1 className="font-bold text-white">CS — Ticket System</h1>
                     <p className="text-sm text-gray-400 leading-relaxed break-words">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -49,7 +50,7 @@ const Fotar = () => {
                     <h1 className="font-bold text-white">Social Links</h1>
                     <div className="text-gray-400 space-y-2">
                         <div className="flex items-center gap-2">
-                            <img src="image/fi_5969020.png" alt="" className="w-5 h-5" />
+                       <img src="image/fi_5969020.png" alt="" className="w-5 h-5" />
                             <p>@CS — Ticket System</p>
                         </div>
                         <div className="flex items-center gap-2">
@@ -68,19 +69,16 @@ const Fotar = () => {
                 </div>
 
             </div>
-            <div className='items-center'>
+            
+        </div>
+        <div className='text-center'>
                 <h1 className='font-bold text-white'>© 2025 CS — Ticket System. All rights reserved.</h1>
             </div>
 
-        </footer>
 
-
-
-
-
-
+        </div>
+        
     );
 };
 
-export default Fotar;
-
+export default Fottar;

@@ -1,15 +1,19 @@
-import Bannar from './Comporents/bannar';
-import Card from './Comporents/Card';
-import Fotar from './Comporents/Fotar';
+import React, {useState} from 'react';
+import './App.css';
+import Bannar from './compeonts/Bannar';
+import Card from './compeonts/teicketCard/Card';
 import './App.css'
+import Fottar from './Fottar';
 
 function App() {
-
+  const [inProgressCount,setInProgressCount] = useState(0);
+  const [resolvedCount,setResolvedCount] = useState(0);
+  
 
   return (
-    <>
-    {/* navber */}
-    <div className=' bg-white shadow-sm'>
+    <div>
+      {/* Navbar */}
+      <div className=' bg-white shadow-sm'>
       <div className=" max-w-[1200px] mx-auto navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -39,18 +43,20 @@ function App() {
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a className='btn text-white bg-[#422AD5]'> <img src="image/Vector (2).png" alt="" /> New Ticket</a>
+        <a className='btn text-white  bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'> <img src="/images/v+ (1).png" alt="" /> New Ticket</a>
       </div>
       </div>
 
-      <Bannar></Bannar>
-      <Card></Card>
-      <Fotar></Fotar>
+      
+      <Bannar inProgressCount={inProgressCount} resolvedCount={resolvedCount}></Bannar> 
 
-
-
-    </>
-  )
+      <Card 
+        setInProgressCount={setInProgressCount} 
+        setResolvedCount={setResolvedCount}></Card> 
+        <Fottar></Fottar>
+    </div>
+    
+  );
 }
 
-export default App
+export default App;
