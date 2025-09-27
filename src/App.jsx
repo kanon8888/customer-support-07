@@ -1,4 +1,6 @@
 import Bannar from './Comporents/bannar';
+import Card from './Comporents/Card';
+import Fotar from './Comporents/Fotar';
 import './App.css'
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
             <li><a>Changelog</a></li>
             <li><a>Blog</a></li>
             <li><a>Download</a></li>
-            <li><a>Contant</a></li>
+            <li><a>Contact</a></li>
           </ul>
         </div>
         <a className='btn text-white bg-[#422AD5]'> <img src="image/Vector (2).png" alt="" /> New Ticket</a>
@@ -42,6 +44,8 @@ function App() {
       </div>
 
       <Bannar></Bannar>
+      <Card></Card>
+      <Fotar></Fotar>
 
 
 
