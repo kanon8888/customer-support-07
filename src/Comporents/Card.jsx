@@ -25,7 +25,7 @@ const Card = () => {
                                     <div className={`flex items-center gap-2 rounded-full w-[120px] h-[28px] px-2
                                         ${ticket.status === "Open" ? "bg-green-200" : "bg-orange-200"}`}>
                                         <img
-                                            src={ticket.status === "Open" ? "/images/Ellipse 22.png" : "/images/Ellipse 22 (2).png"}
+                                            src={ticket.status === "Open" ? "image/Ellipse 22.png" : "image/Open.png"}
                                             alt=""
                                             className="w-4 h-4"
                                         />
